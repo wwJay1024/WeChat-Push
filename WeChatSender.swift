@@ -84,7 +84,7 @@ final class WeChatSender {
 
         var assertionID: IOPMAssertionID = 0
         IOPMAssertionDeclareUserActivity(
-            "WeChat2Push 发送前唤醒显示器" as CFString,
+            "WeChat-Push 发送前唤醒显示器" as CFString,
             IOPMUserActiveType(0),   // kIOPMUserActiveLocal
             &assertionID
         )

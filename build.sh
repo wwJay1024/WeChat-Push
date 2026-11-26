@@ -1,13 +1,14 @@
 #!/bin/bash
-# 编译、打包、签名 WeChat2Push.app
+# 编译、打包、签名 WeChat-Push.app
 # 签名标识与证书保持不变，重新构建不会使已有的系统权限失效
 
 set -euo pipefail
 
 cd "$(dirname "$0")"
 
-APP="$HOME/Applications/WeChat2Push.app"
-BINARY="$APP/Contents/MacOS/WeChat2Push"
+APP="$HOME/Applications/WeChat-Push.app"
+BINARY="$APP/Contents/MacOS/WeChat-Push"
+# 沿用旧标识：改掉会让辅助功能、完全磁盘访问两项系统授权失效
 BUNDLE_ID="com.wwj.wechat2push"
 
 # 默认用本机第一个 Apple Development 证书。没有证书时退回临时签名，

@@ -5,13 +5,13 @@
 	<key>CFBundleDisplayName</key>
 	<string>微信消息推送</string>
 	<key>CFBundleExecutable</key>
-	<string>WeChat2Push</string>
+	<string>WeChat-Push</string>
 	<key>CFBundleIconFile</key>
 	<string>AppIcon</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.wwj.wechat2push</string>
 	<key>CFBundleName</key>
-	<string>WeChat2Push</string>
+	<string>WeChat-Push</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>

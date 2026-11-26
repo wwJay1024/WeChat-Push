@@ -38,7 +38,7 @@ cd WeChat-Push
 ./build.sh
 ```
 
-编译产物在 `~/Applications/WeChat2Push.app`。`build.sh` 会自动取本机第一个 Apple Development 证书签名，没有证书时用临时签名。
+编译产物在 `~/Applications/WeChat-Push.app`。`build.sh` 会自动取本机第一个 Apple Development 证书签名，没有证书时用临时签名。
 
 ### 2. 建飞书应用
 
@@ -55,8 +55,8 @@ cd WeChat-Push
 ### 3. 写配置
 
 ```bash
-mkdir -p ~/Library/Application\ Support/WeChat2Push
-cp config.example.json ~/Library/Application\ Support/WeChat2Push/config.json
+mkdir -p ~/Library/Application\ Support/WeChat-Push
+cp config.example.json ~/Library/Application\ Support/WeChat-Push/config.json
 ```
 
 把四个字段换成自己的：
@@ -73,10 +73,10 @@ cp config.example.json ~/Library/Application\ Support/WeChat2Push/config.json
 ### 4. 授权
 
 ```bash
-open ~/Applications/WeChat2Push.app
+open ~/Applications/WeChat-Push.app
 ```
 
-第一次运行会被系统拦下，到「系统设置 → 隐私与安全性」里给 `WeChat2Push.app` 两项权限：
+第一次运行会被系统拦下，到「系统设置 → 隐私与安全性」里给 `WeChat-Push.app` 两项权限：
 
 - **完全磁盘访问**：用来读通知数据库
 - **辅助功能**：用来发键盘事件操作微信
@@ -85,7 +85,7 @@ open ~/Applications/WeChat2Push.app
 
 ### 5. 开机自启（可选）
 
-在 `~/Library/LaunchAgents/` 放一个 launchd 配置，指向 `~/Applications/WeChat2Push.app/Contents/MacOS/WeChat2Push`，`RunAtLoad` 设为 true。
+在 `~/Library/LaunchAgents/` 放一个 launchd 配置，指向 `~/Applications/WeChat-Push.app/Contents/MacOS/WeChat-Push`，`RunAtLoad` 设为 true。
 
 ## 使用
 

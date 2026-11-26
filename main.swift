@@ -3,7 +3,7 @@ import Foundation
 import SQLite3
 import ApplicationServices
 
-private let supportDir = NSHomeDirectory() + "/Library/Application Support/WeChat2Push"
+private let supportDir = NSHomeDirectory() + "/Library/Application Support/WeChat-Push"
 private let configPath = supportDir + "/config.json"
 private let logPath = supportDir + "/push.log"
 private let replyStatePath = supportDir + "/replies.json"
