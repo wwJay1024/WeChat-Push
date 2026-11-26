@@ -1,4 +1,4 @@
-# WeChat2Push
+# WeChat-Push
 
 把微信（分身）的新消息推到飞书，在飞书里引用那条消息回复，内容会发回对应的微信会话。
 
@@ -33,8 +33,8 @@
 ### 1. 编译
 
 ```bash
-git clone https://github.com/wwJay1024/WeChat2Push.git
-cd WeChat2Push
+git clone https://github.com/wwJay1024/WeChat-Push.git
+cd WeChat-Push
 ./build.sh
 ```
 
